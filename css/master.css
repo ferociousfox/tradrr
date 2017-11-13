@@ -1,66 +1,133 @@
 body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div {
     box-sizing: border-box;
-}
-
-.top-bar {
-    background-color:  coral;
-    padding: 11px;
-}
-
-
-.top-bar h2 {
-    margin: 0;
-}
-
-.top-bar {color: #af3b01;}
-
-span.red {
-    color: orangered;
-}
-
-.heading, .bottom-bar {
-    font-weight: bold;
-}
-
-.heading {
-    padding: 16px 16px 16px 0px;
-}
-
-.picture {
-    float: left;
-    width: 25%;
-    padding: 20px;
-    box-sizing: border-box;
-    min-height: 395px;
-    text-align: center;
-}
-
-.friends {
-    width: 100%;
-    overflow: hidden;
-}
-
-.bottom-bar {
-    /* width: 100%; */
-    /* float: left; */
 }
 
 img {
     max-width: 100%;
 }
+.header {
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 2%;
+    text-align: center;
+    position: relative;
+}
 
-img.online {
-    width: 87px;
+.menu {
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    text-align: left;
+}
+
+.logo-box img {
+    height: 100%;
+    width: auto;
+}
+
+.menu-links {
+    text-align: right;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.menu-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.head-main {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: 5px;
+}
+
+.top-small {
+    font-size: 60px;
+    font-weight: 200;
+    border-bottom: 1px solid;
+    padding-bottom: 19px;
+}
+
+.bottom-large {
+    font-size: 112px;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    border: 40px solid transparent;
+    top: 100%;
+    left: 47.2%;
+    border-top-color: #bf1e2e;
+}
+
+button.normal {
+    background: #2fcee2;
+    border: none;
+    font-size: 26px;
+    display: block;
+    margin: 15px auto 35px;
+    padding: 20px;
+}
+
+.head-bottom {
+    color: #fff;
+}
+
+.header > div:not(:first-child) {
+    margin-top: 210px;
 }
 
 .container {
     max-width: 1200px;
-    width: 100%;
     margin: auto;
+    overflow: auto;
 }
 
-.picture img:not(.online) {
-    height: 230px;
-    width: 100%;
-    object-fit: cover;
+.third {
+    float: left;
+    width: 33.33333%;
+    padding: 65px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.circle img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+.circle {
+    padding-top: 100%;
+    position: relative;
+    border-radius: 100%;
+    border-right: 12px solid;
+    border-left: 12px solid;
+    border-color: #bf1e2e;
+}
+
+.third h4 {
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
