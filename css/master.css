@@ -1,0 +1,66 @@
+body {
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-color:  coral;
+    padding: 11px;
+}
+
+
+.top-bar h2 {
+    margin: 0;
+}
+
+.top-bar {color: #af3b01;}
+
+span.red {
+    color: orangered;
+}
+
+.heading, .bottom-bar {
+    font-weight: bold;
+}
+
+.heading {
+    padding: 16px 16px 16px 0px;
+}
+
+.picture {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 395px;
+    text-align: center;
+}
+
+.friends {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bottom-bar {
+    /* width: 100%; */
+    /* float: left; */
+}
+
+img {
+    max-width: 100%;
+}
+
+img.online {
+    width: 87px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.picture img:not(.online) {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
